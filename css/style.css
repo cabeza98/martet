@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+header{
+    display: flex;
+
+}
+
+main{
+    background-color: #221d2d;
+    color: #fdfcfd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    color: red;
+    text-decoration: underline;
+}
+
+h2{
+    color: rgb(141, 6, 33);
+    text-decoration-thickness: bold;
+}
+
+h3{
+    color: rgb(141, 6, 33);
+}
+
+img{
+    width: 100%;
+}
+
+/* probe con esto también para tratar de hacer que el logo quedara por encima del navbar */
+div img{
+    display: block;
+}
+
+.logo{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.titulo-principal{
+    color: blueviolet;
+    background-color: grey;
+}
+
+.texto-secundario{
+    font-size: 40px;
+}
+
+.menu-container{
+    display: flex;
+    display: inline;
+
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    display: inline;
+}
+
+.photo-grid{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.photo-grid-item{
+    width: 300px;
+    height: 300px;
+    border-radius: 24px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+    max-height: relative;
+    padding: 50px 30px 50px 20px;
+    background: #121017;
+    border-radius: 24px;
+}
+
+.card img{
+    max-width: 280px;
+    display: flex;
+    display: flex;
+    width: 35vw;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+}
+
+.card h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.card h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+
+@media (width <= 600px){
+    .card{
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .card h2 { margin-right: 0; }
+
+    .card img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+@media (width <= 440px){
+    .card img {
+        height: 45vw;
+        width: 45vw;
+        border-radius: 50%;
+        margin-top: -140px;
+    }
+}
+
+#texto-card{
+    color: crimson;
+}
+
+header{
+    background-image: url(./../img/banner-martet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* lo siguiente es un efecto parallax */
+    background-attachment: fixed;
+    /* background-position: right; */
+    /* background-position-y 50px; */
+}
+/*
+header nav ul{
+    list-style: none;
+    /*list-style-image: url(./img/heart-svgrepo-com.svg);
+}
+
+header nav ul li a{
+    color: crimson;
+    text-decoration: underline;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+}
+*/
