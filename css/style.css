@@ -6,6 +6,7 @@ header{
     background-size: cover;
     /* lo siguiente es un efecto parallax */
     background-attachment: fixed;
+}
 main{
     background-color: #221d2d;
     color: #fdfcfd;
